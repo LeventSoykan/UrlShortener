@@ -1,8 +1,6 @@
-# shortener_app/config.py
-
 from functools import lru_cache
 
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     env_name: str = "Local"
